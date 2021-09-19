@@ -13,19 +13,10 @@ public class Product {
     @Column(name = "title")
     private String title;
 
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", price=" + price +
-                '}';
-    }
-
     @Column(name = "price")
     private int price;
 
-    public long getId() {
+    public long getId(){
         return id;
     }
 
@@ -47,9 +38,5 @@ public class Product {
 
     public void setPrice(int price) {
         this.price = price;
-    }
-
-    public Product() {
-
     }
 }
